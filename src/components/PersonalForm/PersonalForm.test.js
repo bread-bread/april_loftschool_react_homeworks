@@ -1,5 +1,5 @@
 import React from 'react';
-import PersonalForm from './PersonalForm';
+import PersonalForm from '../PersonalForm';
 import { shallow } from 'enzyme';
 
 describe('Компонент PersonalForm', () => {
