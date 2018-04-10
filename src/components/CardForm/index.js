@@ -1,4 +1,6 @@
 import React from 'react';
+import './CardForm.css';
+import Title from '../Title/';
 
 class CardForm extends React.Component {
     handleChangeForm = (e) => {
@@ -15,7 +17,7 @@ class CardForm extends React.Component {
         const { cardNumber } = this.props;
         return (
             <div>
-                <h1 className='title'>Номер карты</h1>
+                <Title title='Номер карты'/>
                 <div className='card-form' data-test='card-form'>
                     <input type='text' name='cardNumber' onChange={this.handleChangeForm} placeholder='0000000000000000' value={cardNumber}/>
                 </div>
