@@ -19,7 +19,13 @@ class CardForm extends React.Component {
             <div>
                 <Title title='Номер карты'/>
                 <div className='card-form' data-test='card-form'>
-                    <input type='text' name='cardNumber' onChange={this.handleChangeForm} placeholder='0000000000000000' value={cardNumber}/>
+                    <input
+                        type='text'
+                        name='cardNumber'
+                        onChange={this.handleChangeForm}
+                        placeholder='0000000000000000'
+                        value={cardNumber}
+                    />
                 </div>
             </div>
         )

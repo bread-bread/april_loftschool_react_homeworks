@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 import './Step.css';
 
 class Step extends React.Component {
@@ -11,9 +12,14 @@ class Step extends React.Component {
 
     render () {
         const { number, children, isSelected, isClickable } = this.props;
+        const stepClass = classNames({
+            'step': true,
+            'step-selected': isSelected,
+            'step-clickable': isClickable
+        })
 
         return (
-            <div onClick={this.handleClick} className={`step ${isSelected ? 'step-selected' : ''} ${isClickable ? 'step-clickable' : ''}`}>
+            <div onClick={this.handleClick} className={stepClass}>
                 <p className="step__number">{number}</p>
                 <p className="step__title">{children}</p>
             </div>

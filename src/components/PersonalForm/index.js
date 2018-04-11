@@ -16,9 +16,27 @@ class PersonalForm extends React.Component {
             <div>
                 <Title title='Персональная информация'/>
                 <div className='personal-form' data-test='personal-form'>
-                    <input type='text' name='firstName' onChange={this.handleChangeForm} placeholder='First name' value={firstName}/>
-                    <input type='text' name='lastName' onChange={this.handleChangeForm} placeholder='Last name' value={lastName}/>
-                    <input type='text' name='email' onChange={this.handleChangeForm} placeholder='Email' value={email}/>                                
+                    <input
+                        type='text'
+                        name='firstName'
+                        onChange={this.handleChangeForm}
+                        placeholder='First name'
+                        value={firstName}
+                    />
+                    <input
+                        type='text'
+                        name='lastName'
+                        onChange={this.handleChangeForm}
+                        placeholder='Last name'
+                        value={lastName}
+                    />
+                    <input
+                        type='text'
+                        name='email'
+                        onChange={this.handleChangeForm}
+                        placeholder='Email'
+                        value={email}
+                    />                                
                 </div>
             </div>
         )
